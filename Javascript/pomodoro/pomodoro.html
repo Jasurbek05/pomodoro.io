@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="pomodoro.css" />
+		<link
+			href="https://fonts.cdnfonts.com/css/arial-rounded-mt-buld"
+			rel="stylesheet"
+		/>
+
+		<link rel="shortcut icon" href="./img/redicon.ico" type="image/x-icon" />
+		<title>Pomodoro</title>
+	</head>
+	<body>
+		<div class="main_page">
+			<div class="redSection">
+				<div class="mainContent">
+					<div class="navbar">
+						<div class="leftArea">
+							<img src="./img/logo.png" alt="Pomodoro Logo" />
+							<span>Pomofocus</span>
+						</div>
+						<div class="rightArea">
+							<button>
+								<img src="./img/report.png" alt="Report Info" />
+								<h3>Report</h3>
+							</button>
+							<button>
+								<img src="./img/settings.png" alt="settings" />
+								<h3>Settings</h3>
+							</button>
+							<button>
+								<img src="./img/user.png" alt="User icon" />
+								<h3>User</h3>
+							</button>
+						</div>
+					</div>
+					<div class="middle_field">
+						<div class="up">
+							<button class="pomodoro" type="button">Pomodoro</button>
+							<button class="shortBreak" type="button">Short Break</button>
+							<button class="longBreak" type="button">Long Break</button>
+						</div>
+						<div class="time">
+							<h1>40:00</h1>
+						</div>
+						<div class="start">
+							<button type="button">START</button>
+						</div>
+					</div>
+					<div class="countTask">
+						<h3 id="count">#1</h3>
+						<p id="task_names">This is a your task name</p>
+					</div>
+					<div class="InfoTask">
+						<div class="defaultTitle">
+							<h3>Tasks</h3>
+							<button class="functions" type="button">
+								<img src="./img/functions.png" alt="" />
+							</button>
+						</div>
+						<div class="task_place">
+							<div class="task_container">
+								<div class="main_tasks">
+									<div class="left_side">
+										<input type="checkbox" />
+										<h3 id="task_name">something</h3>
+									</div>
+									<div class="right_side">
+										<span id="1">0</span> / <span id="2">1</span>
+										<button type="button" id="taskOptions">
+											<img src="./img/btnfunctions.png" alt="task Opsions" />
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="addTask" id="addNewTask">
+							<img src="./img/addTask.png" alt="Add Task" />
+							<h4>Add Task</h4>
+						</div>
+						<div class="taskInformation">
+							<h3>Pomos :</h3>
+							<span>0</span>/<span>1</span>
+							<h3>Finish At:</h3>
+							<span>22:45</span>
+							<h3>(0.6h)</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="whiteSection">
+				<div class="part-1">
+					<h1>An online Pomodoro Timer to boost your productivity</h1>
+					<h2>What is Pomofocus?</h2>
+					<br />
+					<div class="block"></div>
+					<p>
+						Pomofocus is a customizable pomodoro timer that works on desktop &
+						mobile browser. The aim of this app is to help you focus on any task
+						you are working on, such as study, writing, or coding. This app is
+						inspired by
+						<a
+							href="https://francescocirillo.com/products/the-pomodoro-technique"
+							target="_blank"
+							>Pomodoro Technique</a
+						>
+						which is a time management method developed by Francesco Cirillo.
+					</p>
+				</div>
+
+				<div class="part-1">
+					<h2>What is Pomodoro Technique?</h2>
+					<br />
+					<div class="block"></div>
+					<p>
+						The Pomodoro Technique is created by Francesco Cirillo for a more
+						productive way to work and study. The technique uses a timer to
+						break down work into intervals, traditionally 25 minutes in length,
+						separated by short breaks. Each interval is known as a pomodoro,
+						from the Italian word for 'tomato', after the tomato-shaped kitchen
+						timer that Cirillo used as a university student. -
+						<a
+							href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+							target="_blank"
+							>Wikipedia
+						</a>
+					</p>
+				</div>
+
+				<div class="part-1">
+					<h2>How to use the Pomodoro Timer?</h2>
+					<br />
+					<div class="block"></div>
+					<ul id="number">
+						<li id="number_number">
+							<h3>1. <span>Add tasks </span> to work on today</h3>
+						</li>
+						<li>
+							<h3>
+								2.<span>Set estimate pomodoros </span> (1 = 25min of work) for
+								each tasks
+							</h3>
+						</li>
+						<li>
+							<h3>3.<span>Select a task </span> to work on</h3>
+						</li>
+						<li>
+							<h3>
+								4. <span>Start timer </span> and focus on the task for 25
+								minutes
+							</h3>
+						</li>
+						<li>
+							<h3>
+								5. <span>Take a break </span> for 5 minutes when the alarm ring
+							</h3>
+						</li>
+						<li>
+							<h3>6.<span>Iterate</span> 3-5 until you finish the tasks</h3>
+						</li>
+					</ul>
+				</div>
+
+				<div class="part-1">
+					<h2>Basic Features</h2>
+					<br />
+					<div class="block"></div>
+					<ul>
+						<li>
+							<h3>
+								<span>Estimate Finish Time:</span> Get an estimate of the time
+								required to complete your daily tasks.
+							</h3>
+						</li>
+
+						<li>
+							<h3>
+								<span>Add Templates:</span> Save your repetitive tasks as
+								templates and add them with just one click.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								<span>Custom Settings: </span> Personalize your focus/break
+								time, alarm sounds, background sounds, and more.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								<span>Visual Reports:</span> See how much time you've focused
+								each day, week, and month.
+							</h3>
+						</li>
+					</ul>
+				</div>
+
+				<div class="part-1">
+					<h2>Premium Features</h2>
+					<br />
+					<div class="block"></div>
+					<ul>
+						<li>
+							<h3>
+								<span>Add Projects:</span> Track how much time you spend on each
+								project.
+							</h3>
+						</li>
+
+						<li>
+							<h3>
+								<span>Yearly Reports:</span> View your focus hours for each
+								year.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								<span> Download Reports:</span> Download your focus history in
+								CSV format.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								<span>No Template Limit:</span> Save more than 3 templates.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								<span>Todoist Integration:</span> Load tasks from your Todoist
+								account.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								<span>No Ads:</span> Enjoy a clean and distraction-free app
+								experience.
+							</h3>
+						</li>
+					</ul>
+				</div>
+				<div class="part-1">
+					<h2>Download App</h2>
+					<div class="block"></div>
+					<ul id="download_items">
+						<li id="d_item">
+							<a href="#">For macOS</a> (zip file) *Right click the icon to open
+						</li>
+						<li id="d_item"><a href="#">For Windows</a> (zip file)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_links">
+				<a href="#">Home</a>
+				<a href="#">Privacy</a>
+				<a href="#">Contact</a>
+				<a href="#">Simple page</a>
+			</div>
+			<div class="social_media">
+				<div class="img">
+					<a href="#">
+						<img id="social_img" src="./img/facebook.png" alt="facebook" />
+					</a>
+				</div>
+
+				<div class="img">
+					<a href="#">
+						<img id="social_img" src="./img/twitter.png" alt="twitter" />
+					</a>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img
+							id="social_img"
+							src="./img/stripe-climate-badge.png"
+							alt="stripe-climate-badge"
+						/>
+					</a>
+				</div>
+			</div>
+			<div class="made">
+				<h2 id="creator">
+					Made with <a href="https://uzu.works/" target="_blank">Yuya Uzu</a>
+				</h2>
+			</div>
+			<div class="all_right">
+				<h4>©Pomofocus 2023. All Rights Reserved.</h4>
+			</div>
+		</div>
+	</body>
+</html>
